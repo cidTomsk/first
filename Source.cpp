@@ -8,10 +8,10 @@ void counter01(int Ainput[], int size_A, int quantity01A[])
     for (int i = 0; i < size_A; i++)
     {
         int temp = A[i];
-        int step;  // step ýòî øàã
+        int step;  // step Ã½Ã²Ã® Ã¸Ã Ã£
         if (A[i] < 2) step = 1;
-        if (A[i] > 1 && A[i] < 4) step = 2; //êîëè÷åñòâî øàãîâ çàâèñèò 
-        if (A[i] > 3 && A[i] < 8) step = 3; //ðàçìåðà ÷èñëà
+        if (A[i] > 1 && A[i] < 4) step = 2; //ÑˆÐ°Ð³ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÑ‚ Ñ‡Ð¸ÑÐ»Ð¾ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð² Ð² Ð´Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ð¼ Ð²Ð¸Ð´Ðµ
+        if (A[i] > 3 && A[i] < 8) step = 3;
         if (A[i] > 7 && A[i] < 16) step = 4;
         for (int j = 0; j < step; j++)
         {
@@ -21,9 +21,9 @@ void counter01(int Ainput[], int size_A, int quantity01A[])
             }
             else
             {
-                quantity01A[1]++; // ïðîâåðêà 1=1, 2=01, 3=11, 4=100, 5=101
+                quantity01A[1]++; // ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° 1=1, 2=01, 3=11, 4=100, 5=101
             }                    // 6=110, 7=111, 8=1000, 8=1000,8=1000
-            temp = temp / 2;          // Èòîãî 15 åäèíèö è 14 íóëåé
+            temp = temp / 2;          // ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐµÐ´Ð¸Ð½Ð¸Ñ† 15 Ð½ÑƒÐ»ÐµÐ¹ 14 
         }
     }
    
